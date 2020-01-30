@@ -53,7 +53,6 @@
   .topnav {
     overflow: hidden;
     background-color: #6B9080;
-    background: linear-gradient(to right, #000000c2, #000000e3 0%, transparent) #6B9080;
   }
   
   /* Topnav Links */
@@ -333,7 +332,7 @@
   .footer {
     padding: 20px;
     text-align: center;
-    background: linear-gradient(to right, #000000c2, #000000e3 0%, transparent) #6B9080;
+    background: #6B9080;
     margin-top: 0;
   }
   
