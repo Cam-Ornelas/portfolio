@@ -26,11 +26,11 @@ body {
     width: 100%;
     padding: 20px;
     text-align: center;
-    background: url(img/IMG_5107.JPG) repeat-x;
-    background: linear-gradient(to right, #000000c2, #000000e3 0%, transparent), url(img/IMG_5107.JPG) no-repeat center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+    /* background: url(img/IMG_5107.JPG) no-repeat cover;
+    background: linear-gradient(to right, #000000c2, #000000e3 0%, transparent), url(img/IMG_5107.JPG) no-repeat center; */
+    background: black;
+    /* background-repeat: no-repeat;
+    background-position: center; */
   }
 
   .header{
@@ -175,7 +175,7 @@ body {
         margin-bottom: 200px;
         width: 85%;
         background: url(img/project1.jpg) no-repeat center;
-        background-size: 100% 100%;
+        background-size: cover;
         -o-transition:.5s;
         -ms-transition:.5s;
         -moz-transition:.5s;
@@ -515,6 +515,63 @@ body {
         }
     }
 
+    @media screen and (min-width:320px) {
+        header {
+            height: 320px;
+        }
+
+        .header{
+            padding: 10px;
+            position: relative;
+            top: 40%;
+            width: 90%;
+        }
+
+        .header h1 {
+            font-size: 20px;
+        }
+
+        .bio {
+            height: 650px;
+        }
+
+        .bio .content {
+            top: 35%
+        }
+        
+        .topnav {
+            justify-content: right;
+        }
+
+        .topnav a {
+            padding-left: 20px;
+        }
+
+        .center {
+            background-size: 100% 100%;
+            width: 95%;
+        }
+
+        .left {
+            background-size: 100% 100%;
+            width: 95%;
+        }
+
+        .right {
+            top: 5%;
+            background-size: 100% 100%;
+            width: 95%;
+        }
+
+        .content .description {
+            width: 220px;
+        }
+
+        .project .links {
+            width: 220px;
+        }
+    }
+
     @media screen and (min-width:375px) {
         header {
             height: 350px;
@@ -559,11 +616,19 @@ body {
             background-size: 100% 100%;
         }
 
+        .right {
+            background-size: 100% 100%;
+        }
+
+        .left {
+            background-size: 100% 100%;
+        }
+
     }
 
     @media screen and (min-width:425px) {
         header {
-            height: 319px;
+            height: 400px;
         }
 
         .header{
@@ -592,11 +657,23 @@ body {
         .project .links {
             width: 320px;
         }
+
+        .center {
+            background-size: cover;
+        }
+
+        .right {
+            background-size: 100% 100%;
+        }
+
+        .left {
+            background-size: 100% 100%;
+        }
     }
       
     @media screen and (min-width:480px) {
         header {
-            height: 550px;
+            height: 500px;
         }
 
         .bio h2 {
@@ -612,8 +689,291 @@ body {
         }
 
         .center {
+            background-size: cover;
+        }
+
+        .right {
             background-size: 100% 100%;
         }
+
+        .left {
+            background-size: 100% 100%;
+        }
+    }
+
+    @media screen and (min-width:550px) {
+        header {
+            height: 500px;
+            background-size: 100% 100%;
+        }
+
+        .header{
+            padding: 10px;
+            position: relative;
+            top: 40%;
+            width: 90%;
+        }
+
+        .header h1 {
+            font-size: 28px;
+        }
+
+        .bio {
+            height: 600px;
+        }
+        
+        .bio h2 {
+            left: 0%;
+            top: 5%;
+        }
+
+        .bio-title {
+            position: relative;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+        }
+
+        .bio .content {
+            padding-left: 20px;
+            top: 25%;
+        }
+
+        .project {
+            height: 1400px;
+        }
+
+        .content p {
+            font-size: 20px;
+        }
+
+        .center {
+            background-size: cover;
+            width: 70%;
+        }
+
+        .left {
+            background-size: 100% 100%;
+            width: 70%;
+        }
+
+        .right {
+            background-size: 100% 100%;
+            width: 70%;
+        }
+
+        .center-title {
+            font-size: 28px;
+            top: 24%;
+        }
+
+        .content .description {
+            font-size: 22px;
+            width: 410px;
+            left: -13%;
+            top: 145%;
+
+        }
+
+        .text {
+            width: 450px;
+        }
+
+        .project .links {
+            top: 275px;
+            width: 360px;
+        }
+
+        .demo, .repo {
+            font-size: 22px;
+        }
+
+        .contact .content {
+            width: 50%;
+        }
+
+    }
+
+    @media screen and (min-width:650px) {
+        header {
+            height: 500px;
+        }
+
+        .header{
+            padding: 10px;
+            position: relative;
+            top: 40%;
+            width: 90%;
+        }
+
+        .header h1 {
+            font-size: 28px;
+        }
+
+        .bio {
+            height: 500px;
+        }
+        
+        .bio h2 {
+            left: 0%;
+            top: 5%;
+        }
+
+        .bio-title {
+            position: relative;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+        }
+
+        .bio .content {
+            padding-left: 20px;
+            top: 25%;
+        }
+
+        .project {
+            height: 1400px;
+        }
+
+        .content p {
+            font-size: 20px;
+        }
+        .center {
+            background-size: cover;
+            width: 70%;
+        }
+
+        .left {
+            background-size: 100% 100%;
+            width: 70%;
+        }
+
+        .right {
+            background-size: 100% 100%;
+            width: 70%;
+        }
+
+        .center-title {
+            font-size: 28px;
+            top: 24%;
+        }
+
+        .content .description {
+            font-size: 22px;
+            width: 450px;
+            left: -10%;
+            top: 145%;
+
+        }
+
+        .text {
+            width: 450px;
+        }
+
+        .project .links {
+            top: 275px;
+            width: 420px;
+        }
+
+        .demo, .repo {
+            font-size: 22px;
+        }
+
+        .contact .content {
+            width: 50%;
+        }
+
+    }
+
+    @media screen and (min-width:700px) {
+        header {
+            height: 500px;
+        }
+
+        .header{
+            padding: 10px;
+            position: relative;
+            top: 40%;
+            width: 90%;
+        }
+
+        .header h1 {
+            font-size: 28px;
+        }
+
+        .bio {
+            height: 500px;
+        }
+        
+        .bio h2 {
+            left: 0%;
+            top: 5%;
+        }
+
+        .bio-title {
+            position: relative;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+        }
+
+        .bio .content {
+            padding-left: 20px;
+            top: 30%;
+        }
+
+        .project {
+            height: 1400px;
+        }
+
+        .content p {
+            font-size: 20px;
+        }
+        .center {
+            background-size: cover;
+            width: 70%;
+        }
+
+        .left {
+            background-size: 100% 100%;
+            width: 70%;
+        }
+
+        .right {
+            background-size: 100% 100%;
+            width: 70%;
+        }
+
+        .center-title {
+            font-size: 28px;
+            top: 24%;
+        }
+
+        .content .description {
+            font-size: 22px;
+            width: 500px;
+            left: -10%;
+            top: 145%;
+
+        }
+
+        .text {
+            width: 450px;
+        }
+
+        .project .links {
+            top: 275px;
+            width: 460px;
+        }
+
+        .demo, .repo {
+            font-size: 22px;
+        }
+
+        .contact .content {
+            width: 50%;
+        }
+
     }
 
     @media screen and (min-width:768px) {
@@ -658,18 +1018,18 @@ body {
         }
 
         .center {
-            background-size: 100% 100%;
-            width: 70%;
+            background-size: cover;
+            width: 60%;
         }
 
         .left {
             background-size: 100% 100%;
-            width: 70%;
+            width: 60%;
         }
 
         .right {
             background-size: 100% 100%;
-            width: 70%;
+            width: 60%;
         }
 
         .center-title {
@@ -690,7 +1050,7 @@ body {
 
         .project .links {
             top: 275px;
-            width: 520px;
+            width: 420px;
         }
 
         .demo, .repo {
@@ -739,7 +1099,7 @@ body {
         }
 
         .center {
-            background-size: 100% 100%;
+            background-size: cover;
             width: 50%;
         }
 
@@ -795,7 +1155,7 @@ body {
 
     @media screen and (min-width:1240px) {
         header {
-            height: 500px;
+            height: 550px;
         }
 
         .header h1 {
@@ -840,7 +1200,7 @@ body {
         }
     
         .center {
-            background-size: 100% 100%;
+            background-size: cover;
             width: 40%;
         }
     
@@ -906,7 +1266,7 @@ body {
 
 @media screen and (min-width:1440px) {
     header {
-        height: 800px;
+        height: 500px;
     }
 
     .header h1 {
@@ -942,7 +1302,7 @@ body {
     }
 
     .project {
-        height: 1500px;
+        height: 2000px;
     }
 
     .center-title {
@@ -951,26 +1311,33 @@ body {
     }
 
     .center {
-        background-size: 100% 100%;
+        background-size: cover;
         width: 40%;
+        height: auto;
     }
 
     .left {
-        background-size: 100% 100%;
-        width: 40%;
+        background-size: cover;
+        width: 30%;
+        height: 20%;
     }
 
     .right {
         top: 8%;
-        background-size: 100% 100%;
-        width: 40%;
+        background-size: cover;
+        width: 30%;
+        height: 20%;
+    }
+
+    .text {
+        top: 130%;
     }
 
     .content .description {
         font-size: 26px;
         width: 520px;
         left: -5%;
-        top: 140%;
+        top: 130%;
     }
 
     .project-title {
@@ -978,7 +1345,7 @@ body {
     }
 
     .project .links {
-        top: 265px;
+        top: 450px;
         width: 520px;
     }
 
@@ -1011,11 +1378,23 @@ body {
 
 @media screen and (min-width:1500px) {
         header {
-            height: 550px;
+            height: 500px;
+        }
+
+        .header h1 {
+            font-size: 48px;
+        }
+    
+        .topnav {
+            height: 60px;
+        }
+    
+        .topnav a {
+            font-size: 26px;
         }
 
         .center {
-            background-size: 100% 100%;
+            background-size: cover;
             width: 30%;
         }
 
