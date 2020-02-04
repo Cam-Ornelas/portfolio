@@ -72,7 +72,7 @@ body {
     }
     
     #myNavbar a {
-        color: white;
+        color: rgb(0, 0, 0);
         transition: all 0.4s ease-in;
     }
       
@@ -124,9 +124,9 @@ body {
     }
 
     .bio-title {
-        text-shadow:0px 0px 30px #6B9080;
+        text-shadow:0px 0px 30px #F2C14E;
         font-size: 36px;
-        color: #F2C14E;
+        color: #6B9080;
         font-family: 'Raleway', sans-serif;
         position: absolute;
         top: 50%;
