@@ -174,14 +174,23 @@ body {
         top: -5%;
         margin-bottom: 200px;
         width: 85%;
-        background: url(img/project1.jpg) no-repeat center;
-        background-size: cover;
+        /* background: url(img/project1.jpg) no-repeat center; */
+        /* background-size: cover; */
         -o-transition:.5s;
         -ms-transition:.5s;
         -moz-transition:.5s;
         -webkit-transition:.5s;
         transition:.5s;
         box-shadow: 10px 10px 5px #888888;
+    }
+
+    img {
+        background-image: contain;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
     .left {
@@ -491,7 +500,6 @@ body {
         }
 
         .center {
-            background-size: 100% 100%;
             width: 95%;
         }
 
@@ -547,8 +555,31 @@ body {
             padding-left: 20px;
         }
 
+        .project {
+            height: 1400px;
+        }
+
+        .center-title {
+            top: 23%;
+        }
+
+        .text {
+            top: 140%;
+        }
+
+        .content .description {
+            font-size: 18px;
+            width: 370px;
+            left: -13%;
+            top: 125%;
+        }
+
+        .project .links {
+            top: 220px;
+            width: 400px;
+        }
+
         .center {
-            background-size: 100% 100%;
             width: 95%;
         }
 
@@ -572,7 +603,7 @@ body {
         }
     }
 
-    @media screen and (min-width:375px) {
+    @media screen and (min-width:350px) {
         header {
             height: 350px;
         }
@@ -612,8 +643,24 @@ body {
             padding-left: 20px;
         }
 
-        .center {
-            background-size: 100% 100%;
+        .center-title {
+            top: 23%;
+        }
+
+        .text {
+            top: 140%;
+        }
+
+        .content .description {
+            font-size: 20px;
+            width: 320px;
+            left: -13%;
+            top: 125%;
+        }
+
+        .project .links {
+            top: 220px;
+            width: 300px;
         }
 
         .right {
@@ -626,7 +673,7 @@ body {
 
     }
 
-    @media screen and (min-width:425px) {
+    @media screen and (min-width:424px) {
         header {
             height: 400px;
         }
@@ -654,19 +701,41 @@ body {
             left: 45%;
         }
 
+        .project {
+            height: 1500px;
+        }
+
+        .center-title {
+            top: 23%;
+        }
+
+        .text {
+            top: 140%;
+        }
+
+        .content .description {
+            font-size: 22px;
+            width: 350px;
+            left: -13%;
+            top: 125%;
+        }
+
         .project .links {
-            width: 320px;
+            top: 220px;
+            width: 310px;
         }
 
         .center {
-            background-size: cover;
+            width: 85%;
         }
 
         .right {
+            width: 85%;
             background-size: 100% 100%;
         }
 
         .left {
+            width: 85%;
             background-size: 100% 100%;
         }
     }
@@ -684,19 +753,43 @@ body {
             width: 325px;
         }
 
-        .project .links {
-            width: 380px;
+        .project {
+            height: 1450px;
         }
 
+        .center-title {
+            top: 23%;
+        }
+
+        .text {
+            top: 130%;
+        }
+
+        .content .description {
+            font-size: 22px;
+            width: 410px;
+            left: -13%;
+            top: 125%;
+        }
+
+        .project .links {
+            top: 355px;
+            width: 360px;
+        }
+
+
         .center {
-            background-size: cover;
+            width: 85%;
+            height: auto;
         }
 
         .right {
+            width: 85%;
             background-size: 100% 100%;
         }
 
         .left {
+            width: 85%;
             background-size: 100% 100%;
         }
     }
@@ -740,7 +833,7 @@ body {
         }
 
         .project {
-            height: 1400px;
+            height: 1450px;
         }
 
         .content p {
@@ -748,8 +841,8 @@ body {
         }
 
         .center {
-            background-size: cover;
             width: 70%;
+            height: auto;
         }
 
         .left {
@@ -771,16 +864,16 @@ body {
             font-size: 22px;
             width: 410px;
             left: -13%;
-            top: 145%;
-
+            top: 125%;
         }
 
         .text {
             width: 450px;
+            top: 130%;
         }
 
         .project .links {
-            top: 275px;
+            top: 375px;
             width: 360px;
         }
 
@@ -794,7 +887,7 @@ body {
 
     }
 
-    @media screen and (min-width:650px) {
+    @media screen and (min-width:640px) {
         header {
             height: 500px;
         }
@@ -832,15 +925,15 @@ body {
         }
 
         .project {
-            height: 1400px;
+            height: 1500px;
         }
 
         .content p {
             font-size: 20px;
         }
         .center {
-            background-size: cover;
             width: 70%;
+            height: auto;
         }
 
         .left {
@@ -855,23 +948,24 @@ body {
 
         .center-title {
             font-size: 28px;
-            top: 24%;
+            top: 23%;
         }
 
         .content .description {
             font-size: 22px;
             width: 450px;
             left: -10%;
-            top: 145%;
+            top: 125%;
 
         }
 
         .text {
             width: 450px;
+            top: 130%;
         }
 
         .project .links {
-            top: 275px;
+            top: 375px;
             width: 420px;
         }
 
@@ -930,8 +1024,8 @@ body {
             font-size: 20px;
         }
         .center {
-            background-size: cover;
             width: 70%;
+            height: auto;
         }
 
         .left {
@@ -962,7 +1056,7 @@ body {
         }
 
         .project .links {
-            top: 275px;
+            top: 375px;
             width: 460px;
         }
 
@@ -1018,8 +1112,8 @@ body {
         }
 
         .center {
-            background-size: cover;
             width: 60%;
+            height: auto;
         }
 
         .left {
@@ -1049,7 +1143,7 @@ body {
         }
 
         .project .links {
-            top: 275px;
+            top: 375px;
             width: 420px;
         }
 
@@ -1080,6 +1174,10 @@ body {
             font-size: 22px;
         }
 
+        .project {
+            height: 1400px;
+        }
+
         .bio {
             height: 500px;
         }
@@ -1099,8 +1197,8 @@ body {
         }
 
         .center {
-            background-size: cover;
             width: 50%;
+            height: auto;
         }
 
         .left {
@@ -1122,12 +1220,13 @@ body {
         }
 
         .text {
+            top: 350px;
             width: 450px;
             height: 60px;
         }
 
         .project .links {
-            top: 265px;
+            top: 365px;
             width: 500px;
         }
 
@@ -1191,16 +1290,15 @@ body {
         }
     
         .project {
-            height: 1350px;
+            height: 1450px;
         }
     
         .center-title {
-            top: 25%;
+            top: 23%;
             font-size: 28px;
         }
     
         .center {
-            background-size: cover;
             width: 40%;
         }
     
@@ -1233,7 +1331,117 @@ body {
         }
     
         .project .links {
-            top: 265px;
+            top: 350px;
+            width: 500px;
+        }
+    
+        .demo, .repo {
+            font-size: 22px;
+        }
+    
+        .contact-title {
+            font-size: 44px;
+        }
+    
+        .contact .content {
+            width: 30%;
+            font-size: 22px;
+        }
+    
+        .footer-social a {
+            background-color: #555;
+            border-radius: 50%;
+            color: #fff;
+            display: inline-block;
+            font-size: 40px;
+            height: 80px;
+            line-height: 80px;
+            margin: 5px;
+            text-align: center;
+            width: 80px;
+        }
+    }
+
+    @media screen and (min-width:1340px) {
+        header {
+            height: 550px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+        }
+    
+        .topnav {
+            height: 60px;
+        }
+    
+        .topnav a {
+            font-size: 22px;
+        }
+
+        .bio {
+            height: 500px;
+        }
+    
+    
+        .bio-title {
+            font-size: 44px;
+        }
+    
+        .bio .content {
+            left: 40%;
+            padding-left: 20px;
+            top: 30%;
+            width: 80%;
+        }
+    
+        .content p {
+            font-size: 22px;
+        }
+    
+        .project {
+            height: 1450px;
+        }
+    
+        .center-title {
+            top: 23%;
+            font-size: 28px;
+        }
+    
+        .center {
+            width: 40%;
+        }
+    
+        .left {
+            background-size: 100% 100%;
+            width: 40%;
+        }
+    
+        .right {
+            top: 3%;
+            background-size: 100% 100%;
+            width: 40%;
+        }
+    
+        .content .description {
+            font-size: 20px;
+            width: 530px;
+            left: -10%;
+            top: 140%;
+    
+        }
+    
+        .project-title {
+            font-size: 44px;
+        }
+    
+        .text {
+            width: 450px;
+            height: 60px;
+        }
+    
+        .project .links {
+            top: 350px;
             width: 500px;
         }
     
@@ -1311,9 +1519,8 @@ body {
     }
 
     .center {
-        background-size: cover;
         width: 40%;
-        height: auto;
+        height: 20%;
     }
 
     .left {
@@ -1394,7 +1601,6 @@ body {
         }
 
         .center {
-            background-size: cover;
             width: 30%;
         }
 
